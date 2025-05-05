@@ -2,6 +2,7 @@ import { Container } from "./components/Container";
 import { Heading } from "./components/Heading";
 import { Logo } from "./components/Logo";
 import { Menu } from "./components/Menu";
+import { Countdown } from "./components/Countdown";
 import "./styles/global.css";
 import "./styles/theme.css";
 
@@ -17,7 +18,7 @@ function App() {
       </Container>
 
       <Container>
-        <Heading>CONTENT</Heading>
+        <Countdown />
       </Container>
 
       <Container>
