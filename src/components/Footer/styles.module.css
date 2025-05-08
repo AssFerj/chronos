@@ -1,0 +1,35 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+  color: var(--text-default);
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: all 0.1s ease-in-out;
+}
+
+.footer:hover {
+  filter: brightness(80%);
+}
+
+.link {
+  text-decoration: none;
+  color: var(--text-default);
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.linkA {
+  text-decoration: none;
+  color: var(--warning);
+  transition: all 0.1s ease-in-out;
+}
+
+.linkA:hover {
+  text-decoration: underline;
+  filter: brightness(80%);
+}

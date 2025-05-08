@@ -7,7 +7,8 @@ import { Cycles } from "./components/Cycles";
 import { DefaultButton } from "./components/DefaultButton";
 import "./styles/global.css";
 import "./styles/theme.css";
-import { PlayCircleIcon, StopCircleIcon } from "lucide-react";
+import { PlayCircleIcon } from "lucide-react";
+import { Footer } from "./components/Footer";
 
 function App() {
   return (
@@ -50,13 +51,12 @@ function App() {
               icon={<PlayCircleIcon />}
               color="green"
             />
-            <DefaultButton
-              type="button"
-              icon={<StopCircleIcon />}
-              color="red"
-            />
           </div>
         </form>
+      </Container>
+
+      <Container>
+        <Footer />
       </Container>
     </>
   );
