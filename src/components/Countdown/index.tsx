@@ -1,5 +1,5 @@
 import styles from "./styles.module.css";
 
-export function Countdown() {
-  return <div className={styles.container}>00:00</div>;
+export function Countdown({ numero }: { numero: number }) {
+  return <div className={styles.container}>{numero}</div>;
 }

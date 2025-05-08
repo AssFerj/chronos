@@ -9,8 +9,15 @@ import "./styles/global.css";
 import "./styles/theme.css";
 import { PlayCircleIcon } from "lucide-react";
 import { Footer } from "./components/Footer";
+import { useState } from "react";
 
 function App() {
+  const [numero, setNumero] = useState(0);
+
+  function handleClick() {
+    setNumero((prev) => prev + 1);
+  }
+
   return (
     <>
       <Container>
@@ -22,7 +29,7 @@ function App() {
       </Container>
 
       <Container>
-        <Countdown />
+        <Countdown numero={numero} />
       </Container>
 
       <Container>
@@ -50,6 +57,7 @@ function App() {
               type="button"
               icon={<PlayCircleIcon />}
               color="green"
+              onClick={handleClick}
             />
           </div>
         </form>
