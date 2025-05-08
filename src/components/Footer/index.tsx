@@ -6,7 +6,7 @@ export function Footer() {
       <a className={styles.link} href="#">
         Entenda como funciona técnica de Pomodoro
       </a>
-      <a className={styles.link} href="#">
+      <div className={styles.link}>
         Chronos Pomodoro &copy; {new Date().getFullYear()} - Desenvolvido por{" "}
         <a
           className={styles.linkA}
@@ -16,7 +16,7 @@ export function Footer() {
         >
           Assis Junior W&M
         </a>
-      </a>
+      </div>
     </footer>
   );
 }
